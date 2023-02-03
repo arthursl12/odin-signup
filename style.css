@@ -1,5 +1,21 @@
 /* Deep blue (#001233), light coral red (#FF595A), beige (#CAC0B3) */
 
+/* || GENERAL DEFINITIONS */
+@font-face {
+    font-family: NorseBold;
+    src: url(https://cdn.statically.io/gh/TheOdinProject/theodinproject/efdc2888072f409e687d31dc580595dbe4fe0ff4/app/assets/fonts/Norse-Bold.otf);
+}
+
+:root {
+    --border-btn: 1px solid rgb(36, 36, 36);
+    --color-base-bg: rgb(240, 240, 240);
+    --color-base-text: rgb(18, 18, 18);
+    --color-btn-bg: rgb(220, 220, 220);
+    --theme-name: "light";
+
+    --bg-image-left: url('images/dominik-hofbauer-IculuMoubkQ-unsplash.jpg')
+}
+
 body{
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     display: flex;
@@ -10,6 +26,11 @@ body{
     min-height: 100vh;
     justify-content: space-between;
     align-content: center;
+}
+
+a, u{
+    text-decoration: underline;
+    color: inherit;
 }
 
 /* || HEADER */
@@ -37,11 +58,57 @@ body > h1 {
 
 /* || CONTENT */
 .content{
+    border: 2px solid black;
     display: flex;
-    /* justify-content: center; */
-    align-items: center;
-    align-self: center;
     flex-grow: 3;
-    gap: 20px;
-    /* border: 1px solid purple; */
 }
+
+.content .right-panel {
+    border: 2px solid purple;
+    flex-grow: 2;
+}
+
+
+/* || LEFT PANEL */
+.content .left-panel {
+    background: url("images/dominik-hofbauer-IculuMoubkQ-unsplash.jpg");
+    background-position: center;
+    background-size: cover;
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+.title{
+    margin-top: 100px;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    padding: 30px 0px;
+}
+
+.left-panel p {
+    color:white;
+}
+
+#logo{
+    height: 5rem;
+    margin: 0;
+}
+
+#title-text{   
+    font-family: NorseBold, Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 60px;
+    margin: 0;
+}
+
+#img-credits{
+    display: flex;
+    justify-content: center;
+    margin: auto 0 0 0;
+    font-size: 12px;
+}
+
+
