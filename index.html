@@ -41,21 +41,21 @@
                         <div class="form-row">
                             <div class="form-field">
                                 <label name="firstname">FIRST NAME: <em class="required-style">*</em></label>
-                                <input type="text" name="firstname" required>
+                                <input type="text" pattern="[A-Za-z]+" title="Please enter only alphabet characters" name="firstname" placeholder="John" minlength="2" required>
                             </div>
                             <div class="form-field">
                                 <label name="lastname" >LAST NAME:  <em class="required-style">*</em></label>
-                                <input type="text" name="lastname"  required>
+                                <input type="text" pattern="[A-Za-z]+" title="Please enter only alphabet characters" name="lastname"  placeholder="Doe" minlength="2" required>
                             </div>
                         </div>
                         <div class="form-row">
                             <div class="form-field">
                                 <label name="email">EMAIL: <em class="required-style">*</em></label>
-                                <input type="text" name="email" required>
+                                <input type="email" name="email" placeholder="johndoe@example.com" required>
                             </div>
                             <div class="form-field">
                                 <label name="phonenumber">PHONE NUMBER: <em class="required-style">*</em></label>
-                                <input type="phone" name="phonenumber" required>
+                                <input type="phone" name="phonenumber" placeholder="37986564242" pattern="[0-9]" title="Please enter only numbers"  required>
                             </div>
                         </div>
                         <div class="form-row">
@@ -70,7 +70,7 @@
                         </div>
                     </div>
                 </div>  
-                <button class="submit">Create Account</button>
+                <button type="submit">Create Account</button>
             </form>
                 
             

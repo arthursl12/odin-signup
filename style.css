@@ -151,7 +151,6 @@ body > h1 {
 
 
 /* || FORM */
-
 label{
     margin-right: 5px;
     font-size: 13px;
@@ -171,6 +170,7 @@ input{
     border-radius: 5px;
     box-shadow: none;
     border: solid 2px #E5E7EB;
+    padding: 5px 10px;
 }
 
 .form-row{
@@ -204,4 +204,17 @@ button{
     background-color: white;
     padding: 10px 0 10px;
     box-shadow: 1px 1px 10px gray;
+}
+
+input:focus{
+    border: solid rgb(167, 167, 233) 1px;
+}
+
+.form-field > input.error{
+    border-color: red;
+}
+
+input.error:valid {
+    border-style: auto;
+    border-color: inherit;
 }
