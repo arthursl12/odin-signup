@@ -13,6 +13,8 @@
     --color-btn-bg: rgb(220, 220, 220);
     --theme-name: "light";
 
+    --form-padding-left: 50px;
+
     --bg-image-left: url('images/dominik-hofbauer-IculuMoubkQ-unsplash.jpg')
 }
 
@@ -114,16 +116,35 @@ body > h1 {
     flex-grow: 2;
     display: flex;
     flex-direction: column;
-    padding: 50px;
+    /* padding: 50px; */
     justify-content: center;
 }
 
-.right-panel  p{
-
+#top-texts, #login-link{
+    padding: 0 var(--form-padding-left);
 }
+
+#top-texts{
+    font-weight: 600;
+    font-size: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 0 var(--form-padding-left) 50px;
+}
+
+#top-texts p{
+    padding: 0;
+    margin: 0;
+}
+
+
+
+/* || FORM */
 
 label{
     margin-right: 5px;
+    font-size: 13px;
 }
 
 .required-style{
@@ -136,23 +157,41 @@ label{
     width: 220px;
 }
 
-label{
-    font-size: 13px;
-}
-
 input{
     border-radius: 5px;
     box-shadow: none;
+    border: solid 2px #E5E7EB;
 }
 
 .form-row{
     display: flex;
-    gap:30px;
-    /* justify-content: space-between; */
+    gap:50px;
 }
 
-.page-form{
+#form-container{
     display: flex;
     flex-direction: column;
     gap: 15px;
+    padding: 10px var(--form-padding-left) 20px;
+}
+
+.form-background-box > p{
+    padding: 0 var(--form-padding-left) 0;
+    font-weight: 600;
+}
+
+button{
+    margin: 30px var(--form-padding-left) 10px;
+}
+
+
+
+#page-form{
+    /* padding: 10px 50px 20px; */
+}
+
+.form-background-box{
+    background-color: white;
+    padding: 10px 0 10px;
+    box-shadow: 1px 1px 10px gray;
 }
