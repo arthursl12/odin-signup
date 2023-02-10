@@ -216,5 +216,10 @@ input:focus{
 
 input.error:valid {
     border-style: auto;
-    border-color: inherit;
+    border: solid 2px rgb(58, 148, 58);
+}
+
+input.error:valid {
+    border-style: auto;
+    border: solid 2px rgb(58, 148, 58);
 }
