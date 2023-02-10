@@ -26,21 +26,33 @@ pwds.addEventListener('blur', (e) => {
     console.log(retype.value);
 
     if (retype.value){
-        if(pwds.value !== retype.value){
-            retype.classList.add('error');
-            retype.setCustomValidity("Passwords should match");
-            pwds.classList.add('error');
-            pwds.setCustomValidity("Passwords should match");
-        }else{
-            retype.classList.remove('error');
-            retype.setCustomValidity("");
-            pwds.classList.remove('error');
-            pwds.setCustomValidity("");
-        }
+        pwdCheck(pwds,retype);
     }
     
 })
 
+
+function pwdCheck(pwd1, pwd2){
+    const pwds = document.querySelector('input[name=password]');
+    if(pwd1.value !== pwd2.value){
+        pwd1.classList.add('error');
+        pwd1.setCustomValidity("Passwords should match");
+        pwd2.classList.add('error');
+        pwd2.setCustomValidity("Passwords should match");
+
+        if (!document.querySelector('.error-msg').textContent){
+            let errorMsg = document.querySelector('.error-msg');
+            errorMsg.textContent = "Passwords should match";
+        }
+    }else{
+        pwd1.classList.remove('error');
+        pwd1.setCustomValidity("");
+        pwd2.classList.remove('error');
+        pwd2.setCustomValidity("");
+        let errorMsg = document.querySelector('.error-msg');
+        errorMsg.textContent = "";
+    }
+}
 
 retype.addEventListener('blur', (e) => {
     console.log('Checker');
@@ -48,15 +60,5 @@ retype.addEventListener('blur', (e) => {
     console.log(retype.value);
 
 
-    if(pwds.value !== retype.value){
-        retype.classList.add('error');
-        retype.setCustomValidity("Passwords should match");
-        pwds.classList.add('error');
-        pwds.setCustomValidity("Passwords should match");
-    }else{
-        retype.classList.remove('error');
-        retype.setCustomValidity("");
-        pwds.classList.remove('error');
-        pwds.setCustomValidity("");
-    }
+    pwdCheck(pwds,retype);
 })

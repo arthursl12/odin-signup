@@ -17,6 +17,7 @@
     --color-orange: rgb(187, 114, 45);
 
     --bg-image-left: url('images/dominik-hofbauer-IculuMoubkQ-unsplash.jpg')
+    box-sizing: border-box;
 }
 
 body{
@@ -176,6 +177,7 @@ input{
 .form-row{
     display: flex;
     gap:80px;
+    min-height: 3rem;
 }
 
 #form-container{
@@ -207,7 +209,7 @@ button{
 }
 
 input:focus{
-    border: solid rgb(167, 167, 233) 1px;
+    border: solid rgb(167, 167, 233) 2px;
 }
 
 .form-field > input.error{
@@ -218,4 +220,12 @@ input:focus{
 input.error:valid {
     border-style: auto;
     border: solid 2px rgb(58, 148, 58);
+}
+
+.error-msg{
+    font-size: smaller;
+    color: red;
+    margin: 0;
+    padding: 0;
+    min-height: 1.5rem;
 }
