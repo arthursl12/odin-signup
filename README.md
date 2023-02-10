@@ -1,7 +1,7 @@
 # odin-signup
 Sign-up Form project from The Odin Project
 
-**<a href="https://arthursl12.github.io/odin-signup" target="_blank">Live Demo (TBD)</a>**
+**<a href="https://arthursl12.github.io/odin-signup" target="_blank">Live Demo</a>**
 
 **Goals**: 
 * Practice HTML, CSS and JS in Web Design
