@@ -14,6 +14,7 @@
     --theme-name: "light";
 
     --form-padding-left: 50px;
+    --color-orange: rgb(187, 114, 45);
 
     --bg-image-left: url('images/dominik-hofbauer-IculuMoubkQ-unsplash.jpg')
 }
@@ -138,6 +139,15 @@ body > h1 {
     margin: 0;
 }
 
+#login-link  a {
+    text-decoration: none;
+    color: var(--color-orange);
+    font-weight: 600;
+}
+
+#login-link{
+    font-size: 16px;
+}
 
 
 /* || FORM */
@@ -182,12 +192,12 @@ input{
 
 button{
     margin: 30px var(--form-padding-left) 10px;
-}
-
-
-
-#page-form{
-    /* padding: 10px 50px 20px; */
+    background-color: var(--color-orange);
+    border-radius: 5px;
+    padding: 8px 20px;
+    font-weight: 600;
+    color: white;
+    box-shadow: 1px 1px 10px gray;
 }
 
 .form-background-box{
