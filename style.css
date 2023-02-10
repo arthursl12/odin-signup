@@ -214,10 +214,6 @@ input:focus{
     border-color: red;
 }
 
-input.error:valid {
-    border-style: auto;
-    border: solid 2px rgb(58, 148, 58);
-}
 
 input.error:valid {
     border-style: auto;
