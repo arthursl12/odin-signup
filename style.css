@@ -13,7 +13,7 @@
     --color-btn-bg: rgb(220, 220, 220);
     --theme-name: "light";
 
-    --form-padding-left: 50px;
+    --form-padding-left: 15%;
     --color-orange: rgb(187, 114, 45);
 
     --bg-image-left: url('images/dominik-hofbauer-IculuMoubkQ-unsplash.jpg')
@@ -61,7 +61,7 @@ body > h1 {
 
 /* || CONTENT */
 .content{
-    border: 2px solid black;
+    /* border: 2px solid black; */
     display: flex;
     flex-grow: 3;
 }
@@ -74,7 +74,7 @@ body > h1 {
     background: url("images/dominik-hofbauer-IculuMoubkQ-unsplash.jpg");
     background-position: center;
     background-size: cover;
-    flex-grow: 1;
+    flex-grow: 2;
     display: flex;
     flex-direction: column;
 }
